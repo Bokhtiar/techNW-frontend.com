@@ -3,7 +3,9 @@
   --main-color: #9900ff;
   --secondary: #0a142f;
   --white: #ffffff;
+  --gray: #c9c9c9;
   --main-font: "Poppins";
+  --display_padding: 30px
 }
 
 /* navbar customize */
@@ -27,7 +29,7 @@
 /* banner section */
 .t-banner-image {
   margin-top: -2px;
-  padding-inline: 30px;
+  padding-inline: var(--display_padding)
 }
 
 .t-banner-heading-1 {
@@ -56,7 +58,7 @@
 }
 
 .t-banner-blog {
-  padding-top: 5%;
+  padding-top: 3%;
 }
 
 .t-banner-blog-des{
@@ -64,9 +66,32 @@
     font-weight: 600;
 }
 
+/* recent blog */
+.t-recent-blog {
+    padding-inline: var(--display_padding);
+}
+
+.t-recent-blog-ul > li {
+    list-style: none;
+    text-decoration: none;
+    float: left;
+}
+
+.t-recent-blog-ul> li > a {
+   padding-inline: 10px;
+   color: var(--gray);
+   text-decoration: none;
+   font-family: var(--main-font);
+   text-transform: uppercase;
+   
+}
 
 
-/* midea query */
+/* midea query banner text */
+@media(max-width : 768px){
+    
+} 
+
 @media(max-width : 768px){
     .t-banner-heading-1 {
         font-size: 12px;
