@@ -1,0 +1,25 @@
+/* global variable  */
+:root {
+    --main-color: #9900FF;
+    --secondary: #0A142F;
+    --white: #ffffff;
+    --main-font : 'Poppins'
+}
+
+/* navbar customize */
+.t-bg-nav{
+    background-color: var(--main-color);
+}
+.t-nav-ul > li {
+    padding-inline: 10px;
+}
+.t-nav-ul > li > a{
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+
+.t-icon > a{
+    padding-inline: 10px;
+}
