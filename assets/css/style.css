@@ -1,4 +1,10 @@
 /* global variable  */
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+}
+
 :root {
   --main-color: #9900ff;
   --secondary: #0a142f;
@@ -12,17 +18,19 @@
 .t-bg-nav {
   background-color: var(--main-color);
 }
-.t-nav-ul > li {
+
+.t-nav-ul>li {
   padding-inline: 10px;
 }
-.t-nav-ul > li > a {
+
+.t-nav-ul>li>a {
   color: var(--white);
   text-transform: uppercase;
   font-family: var(--main-font);
   font-weight: bold;
 }
 
-.t-icon > a {
+.t-icon>a {
   padding-inline: 10px;
 }
 
@@ -36,6 +44,7 @@
   font-size: 43px;
   color: var(--white);
   font-family: "Ubuntu";
+  line-height: 47px;
   padding-top: 17%;
 }
 
@@ -50,7 +59,7 @@
 .t-banner-heading-3 {
   font-family: 'Bebas Neue';
   font-style: normal;
- 
+
   font-size: 43px;
   line-height: 47px;
   padding-top: 4%;
@@ -59,52 +68,62 @@
 
 .t-banner-blog {
   padding-top: 3%;
+  padding-bottom: 10px;
 }
 
-.t-banner-blog-des{
-    font-family: var(--main-font);
-    font-weight: 600;
+.t-banner-blog-des {
+  font-family: var(--main-font);
+  font-weight: 600;
 }
 
 /* recent blog */
 .t-recent-blog {
-    padding-inline: var(--display_padding);
+  padding-inline: var(--display_padding);
 }
 
-.t-recent-blog-ul > li {
-    list-style: none;
-    text-decoration: none;
-    float: left;
+.t-recent-blog-ul>li {
+  list-style: none;
+  text-decoration: none;
+  float: left;
 }
 
-.t-recent-blog-ul> li > a {
-   padding-inline: 10px;
-   color: var(--gray);
-   text-decoration: none;
-   font-family: var(--main-font);
-   text-transform: uppercase;
-   
+.t-recent-blog-ul>li>a {
+  padding-inline: 10px;
+  color: var(--gray);
+  text-decoration: none;
+  font-family: var(--main-font);
+  text-transform: uppercase;
+
+}
+
+.t-recent-blog-card {
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 
 /* midea query banner text */
-@media(max-width : 768px){
-    
-} 
+@media(max-width : 768px) {
+  .t-banner-heading-3 {
+    padding-bottom: 10px;
+  }
 
-@media(max-width : 768px){
-    .t-banner-heading-1 {
-        font-size: 12px;
-        line-height: 15px;
-    }
+  .t-banner-heading-1 {
+    font-size: 12px;
+    line-height: 15px;
+  }
 
-    .t-banner-heading-2 {
-        font-size: 12px;
-        line-height: 15px;
-    }
+  .t-banner-heading-2 {
+    font-size: 12px;
+    line-height: 15px;
+  }
 
-    .t-banner-heading-3 {
-        font-size: 12px;
-        line-height: 15px;
-    }
+  .t-banner-heading-3 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .t-recent-blog-ul {
+    display: none;
+  }
 }
