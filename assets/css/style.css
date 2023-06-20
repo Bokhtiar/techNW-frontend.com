@@ -1,25 +1,85 @@
 /* global variable  */
 :root {
-    --main-color: #9900FF;
-    --secondary: #0A142F;
-    --white: #ffffff;
-    --main-font : 'Poppins'
+  --main-color: #9900ff;
+  --secondary: #0a142f;
+  --white: #ffffff;
+  --main-font: "Poppins";
 }
 
 /* navbar customize */
-.t-bg-nav{
-    background-color: var(--main-color);
+.t-bg-nav {
+  background-color: var(--main-color);
 }
 .t-nav-ul > li {
-    padding-inline: 10px;
+  padding-inline: 10px;
 }
-.t-nav-ul > li > a{
-    color: var(--white);
-    text-transform: uppercase;
-    font-family: var(--main-font);
-    font-weight: bold;
+.t-nav-ul > li > a {
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  font-weight: bold;
 }
 
-.t-icon > a{
-    padding-inline: 10px;
+.t-icon > a {
+  padding-inline: 10px;
+}
+
+/* banner section */
+.t-banner-image {
+  margin-top: -2px;
+  padding-inline: 30px;
+}
+
+.t-banner-heading-1 {
+  font-size: 43px;
+  color: var(--white);
+  font-family: "Ubuntu";
+  padding-top: 17%;
+}
+
+.t-banner-heading-2 {
+  font-family: "Raleway";
+  font-size: 43px;
+  line-height: 47px;
+  color: var(--white);
+  padding-top: 4%;
+}
+
+.t-banner-heading-3 {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+ 
+  font-size: 43px;
+  line-height: 47px;
+  padding-top: 4%;
+  color: var(--white);
+}
+
+.t-banner-blog {
+  padding-top: 5%;
+}
+
+.t-banner-blog-des{
+    font-family: var(--main-font);
+    font-weight: 600;
+}
+
+
+
+/* midea query */
+@media(max-width : 768px){
+    .t-banner-heading-1 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .t-banner-heading-2 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .t-banner-heading-3 {
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
