@@ -142,10 +142,11 @@
   font-weight: 400;
   font-family: var(--main-font);
   font-size: 13px;
+  line-height: 0px;
 }
 
 .t-trending-body {
-  font-family: var(--main-font);
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -159,6 +160,24 @@
   line-height: 20px;
   margin-bottom: 0px;
 }
+
+/* tech tips */
+.t-tech-tip-title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.t-tech-tips-body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+}
+
 /* midea query banner text */
 @media (max-width: 768px) {
   .t-banner-heading-3 {
@@ -194,15 +213,30 @@
     font-family: var(--main-font);
     font-size: 12px;
   }
-  .t-recent-blog-image{
+  .t-recent-blog-image {
     height: 120px;
   }
 
-  .t-trending-img{
+  .t-trending-img {
     height: 200px;
   }
 
-  .t-trending-post-image{
+  .t-trending-post-image {
     height: 90px;
   }
+
+  /* tech tips */
+  .t-tech-tip-title{
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .t-tech-tips-body {
+    display: none;
+  }
+
+  .t-tech-tips-image{
+    height: 120px;
+    width: 130px;
+  }
+ 
 }
