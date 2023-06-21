@@ -11,7 +11,7 @@
   --white: #ffffff;
   --gray: #c9c9c9;
   --main-font: "Poppins";
-  --display_padding: 30px
+  --display_padding: 30px;
 }
 
 /* navbar customize */
@@ -19,25 +19,25 @@
   background-color: var(--main-color);
 }
 
-.t-nav-ul>li {
+.t-nav-ul > li {
   padding-inline: 10px;
 }
 
-.t-nav-ul>li>a {
+.t-nav-ul > li > a {
   color: var(--white);
   text-transform: uppercase;
   font-family: var(--main-font);
   font-weight: bold;
 }
 
-.t-icon>a {
+.t-icon > a {
   padding-inline: 10px;
 }
 
 /* banner section */
 .t-banner-image {
   margin-top: -2px;
-  padding-inline: var(--display_padding)
+  padding-inline: var(--display_padding);
 }
 
 .t-banner-heading-1 {
@@ -57,7 +57,7 @@
 }
 
 .t-banner-heading-3 {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-style: normal;
 
   font-size: 43px;
@@ -81,19 +81,18 @@
   padding-inline: var(--display_padding);
 }
 
-.t-recent-blog-ul>li {
+.t-recent-blog-ul > li {
   list-style: none;
   text-decoration: none;
   float: left;
 }
 
-.t-recent-blog-ul>li>a {
+.t-recent-blog-ul > li > a {
   padding-inline: 10px;
   color: var(--gray);
   text-decoration: none;
   font-family: var(--main-font);
   text-transform: uppercase;
-
 }
 
 .t-recent-blog-card {
@@ -101,9 +100,24 @@
   margin-bottom: 25px;
 }
 
+.t-recent-blog-image {
+  position: relative ;
+  
+}
+
+.t-recent-blog-image-title {
+  position: absolute;
+  left: 50px;
+  top: 150px;
+  right: 50px;
+  font-weight: 600;
+  color: white;
+  font-family: var(--main-font);
+  font-size: 16px;
+}
 
 /* midea query banner text */
-@media(max-width : 768px) {
+@media (max-width: 768px) {
   .t-banner-heading-3 {
     padding-bottom: 10px;
   }
