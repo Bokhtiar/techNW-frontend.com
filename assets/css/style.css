@@ -178,6 +178,26 @@
   line-height: 26px;
 }
 
+/* popular article */
+.t-popular-body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* right side add */
+.right-side-add-1 {
+  width: 302px;
+  height: 440px;
+}
+
+.right-side-add-2 {
+  width: 302px;
+  height: 616px;
+}
+
 /* midea query banner text */
 @media (max-width: 768px) {
   .t-banner-heading-3 {
@@ -226,7 +246,7 @@
   }
 
   /* tech tips */
-  .t-tech-tip-title{
+  .t-tech-tip-title {
     font-size: 12px;
     line-height: 12px;
   }
@@ -234,9 +254,19 @@
     display: none;
   }
 
-  .t-tech-tips-image{
+  .t-tech-tips-image {
     height: 120px;
     width: 130px;
   }
- 
+
+  /* right side add */
+.right-side-add-1 {
+  width: 100%;
+  height: 270px;
+}
+
+.right-side-add-2 {
+  width: 100%;
+  height: 376px;
+}
 }
