@@ -43,13 +43,13 @@
 .t-banner-heading-1 {
   font-size: 43px;
   color: var(--white);
-  font-family: "Ubuntu";
+  font-family: var(--main-font);
   line-height: 47px;
   padding-top: 17%;
 }
 
 .t-banner-heading-2 {
-  font-family: "Raleway";
+  font-family: var(--main-font);
   font-size: 43px;
   line-height: 47px;
   color: var(--white);
@@ -57,13 +57,20 @@
 }
 
 .t-banner-heading-3 {
-  font-family: "Bebas Neue";
+  font-family: var(--main-font);
   font-style: normal;
 
   font-size: 43px;
   line-height: 47px;
   padding-top: 4%;
   color: var(--white);
+  margin-bottom: 0px;
+}
+
+.t-banner-blog-a {
+  text-decoration: none !important;
+  color: white;
+  list-style: none;
 }
 
 .t-banner-blog {
@@ -90,7 +97,7 @@
 .t-recent-blog-ul > li > a {
   padding-inline: 10px;
   color: var(--gray);
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: var(--main-font);
   text-transform: uppercase;
 }
@@ -114,6 +121,7 @@
   color: white;
   font-family: var(--main-font);
   font-size: 16px;
+  text-decoration: none !important;
 }
 
 /* trending tech */
@@ -161,6 +169,10 @@
   margin-bottom: 0px;
 }
 
+.t-trending-post-title > a {
+  text-decoration: none !important;
+  color: #3a444d;
+}
 /* tech tips */
 .t-tech-tip-title {
   font-family: var(--main-font);
@@ -168,6 +180,11 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
+}
+
+.t-tech-tip-title > a {
+  text-decoration: none !important;
+  color: #3a444d;
 }
 
 .t-tech-tips-body {
@@ -185,6 +202,8 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
+  color: #3a444d;
+  text-decoration: none !important;
 }
 
 /* right side add */
@@ -204,6 +223,11 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
+}
+
+.t-event-body > a {
+  text-decoration: none !important;
+  color: #3a444d;
 }
 
 /* footer */
@@ -234,15 +258,82 @@
   text-transform: uppercase;
 }
 
+/* category page */
+.category-title {
+  font-family: var(--main-font);
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: -0.6000000238418579px;
+  text-align: left;
+}
+
+.t-cat-article-number {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 2.6500000953674316px;
+  text-align: left;
+}
+
+.t-category-body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.3499999940395355px;
+  text-align: left;
+}
+
+.t-category-title{
+  text-decoration: none !important;
+  color: #3a444d;
+}
+
+.t-single-blog-title {
+  font-family: var(--main-font);
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: -0.875px;
+  text-align: left;
+  color: #3a444d;
+}
+
+.t-blog-detail-author {
+  font-family: var(--main-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.t-blog-detail-cercle {
+  width: 6px;
+  height: 6px;
+  top: 7.94000244140625px;
+  left: 117px;
+}
+.t-blog-detail-body {
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #49545e;
+}
 /* footer */
-  .footer-text {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    color: white;
-  }
+.footer-text {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
 
 /* midea query banner text */
 @media (max-width: 768px) {
@@ -316,5 +407,25 @@
     height: 376px;
   }
 
-  
+  /* category */
+  .t-cat-image {
+    width: 100%;
+    height: 100px;
+  }
+
+  .t-category-body {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 3px;
+  }
+
+  .t-single-blog-title{
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .t-single-blog-img{
+    width: 100%;
+    height: 300px;
+  }
 }
